@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="main.js"></script>
+        <title>Business Card</title>
+    </head>
+    <body>
+        <div id="card1"> <!--Div for the order card-->
+            <h2><b>Beställ ditt kort här:</b></h2>
+            <div id="inputFields"> <!--Div for all input fields-->
+                <div>
+                    <label>Företag .......</label>
+                    <input type="text" id="company"> <!--Input field for the company-->
+                </div>
+
+                <div>
+                    <label for="lastName">Efternamn .....</label>
+                    <input type="text" id="lastName"> <!--Input field for the surname-->
+                </div>
+
+                <div>
+                    <label for="firstName">Förnamn .....</label>
+                    <input type="text" id="firstName"> <!--Input field for the firstname-->
+                </div>
+
+                <div>
+                    <label for="title">Titel .........</label>
+                    <input type="text" id="title"> <!--Input field for the title-->
+                </div>
+
+                <div>
+                    <label for="telephone">Telefon .......</label>
+                    <input type="text" id="telephone"> <!--Input field for the telephone-->
+                </div>
+
+                <div>
+                    <label for="email">E-post ........</label>
+                    <input type="text" id="email"> <!--Input field for the email-->
+                </div>
+                
+                <div>
+                    <label for="backgroundColor">Bakgrundsfärg . </label>
+                    <select id="backgroundColor"> <!--Select field for the background color-->
+                        <option value="lightblue">Ljusblå</option>
+                        <option value="lightyellow">Ljusgul</option>
+                        <option value="white">Vit</option>
+                        <option value="turquoise">Turkos</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="textColor">Textfärg ..... </label>
+                    <select id="textColor"> <!--Select field for the text color-->
+                        <option value="black">Svart</option>
+                        <option value="blue">Blå</option>
+                        <option value="red">Röd</option>
+                        <option value="darkgreen">Mörkgrön</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="font">Typsnitt</label>
+                    <select id="font"> <!--Select field for the font-->
+                        <option value="verdana">Verdana</option>
+                        <option value="arial">Arial</option>
+                        <option value="tahoma">Tahoma</option>
+                        <option value="impact">Impact</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="buttons"> <!--Div for the buttons-->
+                <input type="button" id="reset" value="Nollställ"> <!--Button for reseting the card-->
+                <input type="button" id="print" value="Skriv Ut"> <!--Button for printing out the ordered business card-->
+            </div>
+
+        </div>
+
+        <div id="errorMessage"> <!--Error message if all fields weren't filled out-->
+            Please enter all fields
+        </div>
+
+        <div id="card2"> <!--The ordered business card-->
+            <h1 id="companyText"><b>Företag</b></h1>
+            <h3 id="nameText">Förnamn Efternamn</h3>
+            <p id="titleText">Titel</p>
+            <br>
+            <h3 id="telephoneText">Tfn  167 167</h3>
+            <p id="emailText">E-post: firstname.lastname@mail.com</p>
+        </div>
+        <input type="button" id="return" value="Gå Tillbaks">
+    </body>
+</html>

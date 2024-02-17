@@ -1,0 +1,76 @@
+#card1 {
+    width: 325px;
+    background-color: lightblue;
+}
+
+#inputFields div {
+    padding: 5px;
+    padding-right: 35px;
+}
+
+#inputFields div input {
+    left: 124.5px;
+    position: absolute;
+    border: 3px inset;
+}
+
+.select {
+    padding: 5px;
+    padding-right: 35px;
+}
+
+#errorMessage {
+    margin: 0px;
+    color: red;
+}
+
+#inputFields select {
+    border: 3px inset;
+    position: absolute;
+    left: 124.5px;
+}
+
+#buttons {
+    padding: 10%;
+    text-align: center;
+}
+
+#buttons input {
+    border: 3px outset;
+}
+
+#buttons input:active {
+    border: 3px inset;
+}
+
+#return {
+    border: 3px outset;
+}
+
+#return:active {
+    border: 3px inset;
+}
+
+#card2 {
+    width: fit-content;
+}
+
+#companyText {
+    margin-bottom: 0px;
+}
+
+#nameText {
+    margin: 0px;
+}
+
+#titleText {
+margin: 0px;
+}
+
+#telephoneText {
+    margin-bottom: 0px;
+}
+
+#emailText {
+    margin-top: 0px;
+}
